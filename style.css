@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
    
 }
 
@@ -9,24 +12,29 @@ body {
     background-color: antiquewhite;
     border: 5px;
     border-style: groove;
-    width: 200px;
-   
-    
+    width: 60vw;
+    height: 40vw;
 }
 
 #header {
     display: flex;
-    width: 200px;
+    width: 50vw;
+    min-height: 10vw;
+    flex: 1 1 0;
+    align-items: space-between;
 }
+
 
 #clear {
     flex-grow: 1;
+    flex-shrink: 1;
 }
 #display {
     flex: 2 1 0;
     background-color: white;
-    margin: 3px;
-    padding: 5px;
+    text-align: center;
+    padding: 5%;
+    margin: 1%;
 }
 
 button {
@@ -34,4 +42,20 @@ button {
     padding: 10px;
     text-align: center;
     display: inline-block;
+    flex: auto;
+    min-width: 8vw;
+    min-height: 3vh;
+}
+
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 0;
+}
+
+
+
+#operators {
+    flex: 1 1 0;
+    display: flex;
 }
